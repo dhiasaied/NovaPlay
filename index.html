@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaPlay - Immersive Gaming Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-particles"></div>
+        <div class="grid-overlay"></div>
+        <div class="pulse-circles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>NovaPlay</h2>
+                <span class="logo-glow"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#jeux" class="nav-link">Games</a></li>
+                <li><a href="#tournois" class="nav-link">Tournaments</a></li>
+                <li><a href="#actualites" class="nav-link">News</a></li>
+                <li><a href="#communaute" class="nav-link">Community</a></li>
+                <li><a href="#boutique" class="nav-link">Shop</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Welcome to</span>
+                    <span class="neon-text">NovaPlay</span>
+                </h1>
+                <p class="hero-subtitle">The gaming universe redefined. Discover, play and connect with a passionate community.</p>
+                <div class="hero-buttons">
+                    <button class="btn-hero-primary">Start Playing</button>
+                    <button class="btn-hero-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Trailer
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-game-elements">
+                    <div class="game-element element-1"></div>
+                    <div class="game-element element-2"></div>
+                    <div class="game-element element-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Games Section -->
+    <section class="latest-games" id="jeux">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Latest Games</h2>
+                <p class="section-subtitle">Discover the latest releases from the gaming world</p>
+            </div>
+            
+            <div class="games-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="action">Action</button>
+                <button class="filter-btn" data-filter="rpg">RPG</button>
+                <button class="filter-btn" data-filter="racing">Racing</button>
+                <button class="filter-btn" data-filter="strategy">Strategy</button>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card" data-category="action">
+                    <div class="game-image">
+                        <div class="game-placeholder"><img src="images/game1.jpg" alt="Cyber Combat 2025" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="game-overlay">
+                            <button class="play-btn" title="Play Cyber Combat 2025"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Cyber Combat 2025</h3>
+                        <p>Action • Futuristic</p>
+                        <div class="game-rating">
+                            <div class="stars">★★★★★</div>
+                            <span>4.8/5</span>
+                        </div>
+                        <div class="game-actions">
+                            <button class="btn-game-primary">Play Now</button>
+                            <button class="btn-game-secondary">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="racing">
+                    <div class="game-image">
+                        <div class="game-placeholder"><img src="images/game2.jpg" alt="Neo Speed Racing" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="game-overlay">
+                            <button class="play-btn" title="Play Neo Speed Racing"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Neo Speed Racing</h3>
+                        <p>Racing • Arcade</p>
+                        <div class="game-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span>4.6/5</span>
+                        </div>
+                        <div class="game-actions">
+                            <button class="btn-game-primary">Play Now</button>
+                            <button class="btn-game-secondary">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="rpg">
+                    <div class="game-image">
+                        <div class="game-placeholder"><img src="images/game3.jpg" alt="Mystic Realms" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="game-overlay">
+                            <button class="play-btn" title="Play Mystic Realms"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Mystic Realms</h3>
+                        <p>RPG • Fantasy</p>
+                        <div class="game-rating">
+                            <div class="stars">★★★★★</div>
+                            <span>4.9/5</span>
+                        </div>
+                        <div class="game-actions">
+                            <button class="btn-game-primary">Play Now</button>
+                            <button class="btn-game-secondary">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="strategy">
+                    <div class="game-image">
+                        <div class="game-placeholder"><img src="images/game4.jpg" alt="Galactic Empire" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="game-overlay">
+                            <button class="play-btn" title="Play Galactic Empire"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Galactic Empire</h3>
+                        <p>Strategy • Sci-Fi</p>
+                        <div class="game-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span>4.7/5</span>
+                        </div>
+                        <div class="game-actions">
+                            <button class="btn-game-primary">Play Now</button>
+                            <button class="btn-game-secondary">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="action">
+                    <div class="game-image">
+                        <div class="game-placeholder"><img src="images/game5.jpg" alt="Urban Warfare" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="game-overlay">
+                            <button class="play-btn" title="Play Urban Warfare"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Urban Warfare</h3>
+                        <p>Action • Modern</p>
+                        <div class="game-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="game-actions">
+                            <button class="btn-game-primary">Play Now</button>
+                            <button class="btn-game-secondary">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="racing">
+                    <div class="game-image">
+                        <div class="game-placeholder"><img src="images/game6.jpg" alt="Drift Masters" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="game-overlay">
+                            <button class="play-btn" title="Play Drift Masters"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="game-info">
+                        <h3>Drift Masters</h3>
+                        <p>Racing • Simulation</p>
+                        <div class="game-rating">
+                            <div class="stars">★★★★★</div>
+                            <span>4.8/5</span>
+                        </div>
+                        <div class="game-actions">
+                            <button class="btn-game-primary">Play Now</button>
+                            <button class="btn-game-secondary">Pre-order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Tournaments</h3>
+                    <p>Participate in epic tournaments and showcase your skills</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Join a passionate community of gamers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>News</h3>
+                    <p>Stay updated with the latest gaming news</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Experience</h3>
+                    <p>An optimized platform for the ultimate gaming experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="jeux-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Games</h2>
+                <p class="section-subtitle">Discover our complete collection of games</p>
+            </div>
+            
+            <div class="jeux-categories">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Action</h3>
+                    <p>25 games available</p>
+                    <button class="btn-category">Explore</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <h3>RPG</h3>
+                    <p>18 games available</p>
+                    <button class="btn-category">Explore</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Racing</h3>
+                    <p>12 games available</p>
+                    <button class="btn-category">Explore</button>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>Strategy</h3>
+                    <p>15 games available</p>
+                    <button class="btn-category">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section class="tournois-section" id="tournois">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tournaments</h2>
+                <p class="section-subtitle">Participate in the most exciting competitions</p>
+            </div>
+            
+            <div class="tournois-grid">
+                <div class="tournoi-card">
+                    <div class="tournoi-header">
+                        <div class="tournoi-prize">
+                            <i class="fas fa-trophy"></i>
+                            <span>10,000€</span>
+                        </div>
+                        <div class="tournoi-status active">Ongoing</div>
+                    </div>
+                    <h3>Cyber Combat Championship</h3>
+                    <p>International FPS tournament</p>
+                    <div class="tournoi-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Jan 15-20, 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>256 participants</span>
+                        </div>
+                    </div>
+                    <button class="btn-tournoi">Register</button>
+                </div>
+                
+                <div class="tournoi-card">
+                    <div class="tournoi-header">
+                        <div class="tournoi-prize">
+                            <i class="fas fa-trophy"></i>
+                            <span>5,000€</span>
+                        </div>
+                        <div class="tournoi-status upcoming">Coming Soon</div>
+                    </div>
+                    <h3>Racing Masters Cup</h3>
+                    <p>Automotive racing competition</p>
+                    <div class="tournoi-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Jan 25-30, 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>128 participants</span>
+                        </div>
+                    </div>
+                    <button class="btn-tournoi">Pre-register</button>
+                </div>
+                
+                <div class="tournoi-card">
+                    <div class="tournoi-header">
+                        <div class="tournoi-prize">
+                            <i class="fas fa-trophy"></i>
+                            <span>8,000€</span>
+                        </div>
+                        <div class="tournoi-status upcoming">Coming Soon</div>
+                    </div>
+                    <h3>Mystic Realms Arena</h3>
+                    <p>Strategic RPG tournament</p>
+                    <div class="tournoi-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Feb 5-10, 2025</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span>64 participants</span>
+                        </div>
+                    </div>
+                    <button class="btn-tournoi">Pre-register</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="actualites-section" id="actualites">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">News</h2>
+                <p class="section-subtitle">Stay informed with the latest gaming news</p>
+            </div>
+            
+            <div class="actualites-grid">
+                <article class="actualite-card featured">
+                    <div class="actualite-image">
+                        <img src="images/actualites1.jpg" alt="New AAA game announced" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="actualite-category">Breaking</div>
+                    </div>
+                    <div class="actualite-content">
+                        <h3>New game announced for NovaPlay</h3>
+                        <p>Discover the first details of our next flagship title that will revolutionize gaming...</p>
+                        <div class="actualite-meta">
+                            <span class="date">Jan 15, 2025</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <button class="btn-actualite">Read More</button>
+                    </div>
+                </article>
+                
+                <article class="actualite-card">
+                    <div class="actualite-image">
+                        <img src="images/actualites2.jpg" alt="Cyber Combat tournament results" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="actualite-category">Tournaments</div>
+                    </div>
+                    <div class="actualite-content">
+                        <h3>Cyber Combat tournament results</h3>
+                        <p>Discover who won first place and the highlights of the competition...</p>
+                        <div class="actualite-meta">
+                            <span class="date">Jan 12, 2025</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                        <button class="btn-actualite">Read More</button>
+                    </div>
+                </article>
+                
+                <article class="actualite-card">
+                    <div class="actualite-image">
+                        <img src="images/actualites3.jpg" alt="New NovaPlay platform features" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="actualite-category">Technology</div>
+                    </div>
+                    <div class="actualite-content">
+                        <h3>New NovaPlay platform features</h3>
+                        <p>Discover the improvements made to our platform for a better experience...</p>
+                        <div class="actualite-meta">
+                            <span class="date">Jan 10, 2025</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <button class="btn-actualite">Read More</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="communaute-section" id="communaute">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Community</h2>
+                <p class="section-subtitle">Join our passionate community of gamers</p>
+            </div>
+            
+            <div class="communaute-stats">
+                <div class="stat-card">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Active members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Clans</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1M+</div>
+                    <div class="stat-label">Games played</div>
+                </div>
+            </div>
+            
+            <div class="communaute-features">
+                <div class="communaute-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Forums</h3>
+                    <p>Discuss strategies, share your achievements and connect with other players</p>
+                </div>
+                <div class="communaute-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p>Join our Discord server for real-time discussions</p>
+                </div>
+                <div class="communaute-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Streams</h3>
+                    <p>Watch the best players live and learn from their techniques</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="boutique-section" id="boutique">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop</h2>
+                <p class="section-subtitle">Discover our collection of gaming products</p>
+            </div>
+            
+            <div class="boutique-categories">
+                <button class="boutique-filter active" data-category="all">All</button>
+                <button class="boutique-filter" data-category="hardware">Hardware</button>
+                <button class="boutique-filter" data-category="merchandise">Merchandise</button>
+                <button class="boutique-filter" data-category="accessories">Accessories</button>
+            </div>
+            
+            <div class="boutique-grid">
+                <div class="produit-card" data-category="hardware">
+                    <div class="produit-image">
+                        <img src="images/shop1.jpg" alt="NovaPlay Pro Controller" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="produit-badge">New</div>
+                    </div>
+                    <div class="produit-info">
+                        <h3>NovaPlay Pro Controller</h3>
+                        <p>Professional gaming controller</p>
+                        <div class="produit-price">129.99€</div>
+                        <button class="btn-produit">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="produit-card" data-category="merchandise">
+                    <div class="produit-image">
+                        <img src="images/shop2.jpg" alt="NovaPlay T-Shirt" style="width:100%;height:100%;object-fit:cover;">
+                        <div class="produit-badge">Popular</div>
+                    </div>
+                    <div class="produit-info">
+                        <h3>NovaPlay T-Shirt</h3>
+                        <p>Official community t-shirt</p>
+                        <div class="produit-price">24.99€</div>
+                        <button class="btn-produit">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="produit-card" data-category="accessories">
+                    <div class="produit-image">
+                        <img src="images/shop3.jpg" alt="NovaPlay Gaming Headset" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="produit-info">
+                        <h3>NovaPlay Gaming Headset</h3>
+                        <p>Immersive audio for optimal experience</p>
+                        <div class="produit-price">89.99€</div>
+                        <button class="btn-produit">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="produit-card" data-category="hardware">
+                    <div class="produit-image">
+                        <img src="images/shop4.jpg" alt="NovaPlay Gaming Mouse" style="width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <div class="produit-info">
+                        <h3>NovaPlay Gaming Mouse</h3>
+                        <p>Precision and responsiveness for pros</p>
+                        <div class="produit-price">79.99€</div>
+                        <button class="btn-produit">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We're here to help you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>support@novaplay.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>123 Gaming Street, 75001 Paris, France</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 9AM-6PM | Sat: 10AM-4PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required aria-label="Message subject">
+                                <option value="">Subject</option>
+                                <option value="support">Technical Support</option>
+                                <option value="billing">Billing</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-contact">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NovaPlay</h3>
+                    <p>The next-generation gaming platform</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Legal Notice</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay informed of the latest news</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dhia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="registerModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Create Account</h2>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="register-form" id="registerForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select your country</option>
+                            <option value="france">France</option>
+                            <option value="usa">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="canada">Canada</option>
+                            <option value="germany">Germany</option>
+                            <option value="spain">Spain</option>
+                            <option value="italy">Italy</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="privacy-link">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for gaming updates</label>
+                    </div>
+                    <button type="submit" class="btn-register">Create Account</button>
+                </form>
+                <div class="modal-footer">
+                    <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
