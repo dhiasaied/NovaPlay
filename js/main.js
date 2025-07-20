@@ -103,9 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Ouvrir la modal d'inscription depuis tous les boutons (sauf fermeture modal)
+    // Ouvrir la modal d'inscription depuis tous les boutons (sauf fermeture modal et hamburger)
     document.querySelectorAll('button').forEach(btn => {
-        if (btn.id !== 'closeModal') {
+        if (
+            btn.id !== 'closeModal' &&
+            btn.id !== 'hamburger' // <-- On exclut le hamburger
+        ) {
             btn.addEventListener('click', function() {
                 modal.classList.add('active');
                 modal.setAttribute('aria-hidden', 'false');
